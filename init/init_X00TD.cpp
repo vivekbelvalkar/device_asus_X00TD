@@ -82,4 +82,14 @@ void vendor_load_properties()
 {
     set_avoid_gfxaccel_config();
     NFC_check();
+
+   // Safetynet Workaround
+    property_override("ro.boot.flash.locked", "1");
+    property_override("ro.boot.verifiedbootstate", "green");
+    property_override("ro.boot.veritymode", "enforcing");
+    property_override("ro.boot.vbmeta.device_state", "locked");
+    property_override("ro.build.description", "raven-user 13 TP1A.221005.002 9012097 release-keys");
+    property_override("ro.build.fingerprint", "google/raven/raven:13/TP1A.221005.002/9012097:user/release-keys");
+    property_override("ro.system.build.fingerprint", "google/raven/raven:13/TP1A.221005.002/9012097:user/release-keys");
+
 }
