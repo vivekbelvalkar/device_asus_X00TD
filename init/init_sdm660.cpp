@@ -109,10 +109,13 @@ void vendor_load_properties()
     check_device();
     NFC_check();
 
-    property_override("dalvik.vm.heapstartsize", heapstartsize);
-    property_override("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
-    property_override("dalvik.vm.heapsize", heapsize);
-    property_override("dalvik.vm.heaptargetutilization", heaptargetutilization);
-    property_override("dalvik.vm.heapminfree", heapminfree);
-    property_override("dalvik.vm.heapmaxfree", heapmaxfree);
+   // Safetynet Workaround
+    property_override("ro.boot.flash.locked", "1");
+    property_override("ro.boot.verifiedbootstate", "green");
+    property_override("ro.boot.veritymode", "enforcing");
+    property_override("ro.boot.vbmeta.device_state", "locked");
+    property_override("ro.build.description", "cheetah-user 13 TQ2A.230505.002 9891397 release-keys");
+    property_override("ro.build.fingerprint", "google/cheetah/cheetah:13/TQ2A.230505.002/9891397:user/release-keys");
+    property_override("ro.system.build.fingerprint", "google/cheetah/cheetah:13/TQ2A.230505.002/9891397:user/release-keys");
+
 }
