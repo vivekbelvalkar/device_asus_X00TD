@@ -44,4 +44,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
     <!-- Doze: pulse parameter - delay to wait for the screen to wake up after an intent -->
     <integer name="doze_pulse_delay_in_intent">0</integer>
+
+	
+    <dimen name="rounded_corner_content_padding">1dp</dimen>
+
 </resources>
