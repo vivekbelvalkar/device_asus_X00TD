@@ -158,7 +158,7 @@ PRODUCT_PACKAGES += \
     qcom.fmradio.xml
 
 # GoogleCameraGo
-$(call inherit-product, packages/apps/GoogleCameraGoEdition/GoogleCameraGoEdition.mk)
+#$(call inherit-product, packages/apps/GoogleCameraGoEdition/GoogleCameraGoEdition.mk)
 
 # GPS
 PRODUCT_PACKAGES += \
