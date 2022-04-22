@@ -8,6 +8,12 @@
     "repository": "vendor_asus_X00TD",
     "target_path": "vendor/asus/X00TD",
     "branch": "eleven",
+  },
+  {
+    "remote": "lineage",
+    "revision": "lineage-18.1",
+    "repository": "LineageOS/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings"
   }
 ]
 
