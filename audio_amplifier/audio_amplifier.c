@@ -16,7 +16,7 @@
  */
 
 #define LOG_TAG "amplifier_sdm660"
-//#define LOG_NDEBUG 0
+#define LOG_NDEBUG 0
 
 #include <cutils/str_parms.h>
 #include <hardware/audio_amplifier.h>
@@ -26,6 +26,7 @@
 #include <stdlib.h>
 #include <sys/types.h>
 
+/* clang-format off */
 #include "audio_hw.h"
 #include "platform.h"
 #include "platform_api.h"
