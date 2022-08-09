@@ -20,6 +20,8 @@ PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_PACKAGES += \
     fs_config_files
 
+OVERRIDE_TARGET_FLATTEN_APEX := true
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
