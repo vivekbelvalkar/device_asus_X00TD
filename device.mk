@@ -11,6 +11,9 @@ PRODUCT_COMPRESSED_APEX := false
 # Default is nosdcard, S/W button enabled in resource
 PRODUCT_CHARACTERISTICS := nosdcard
 
+#Disable Apex
+OVERRIDE_TARGET_FLATTEN_APEX := true
+
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
