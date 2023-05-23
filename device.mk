@@ -16,6 +16,8 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 # Default is nosdcard, S/W button enabled in resource
 PRODUCT_CHARACTERISTICS := nosdcard
 
+OVERRIDE_TARGET_FLATTEN_APEX := true
+
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
