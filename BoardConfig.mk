@@ -152,6 +152,8 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+BUILD_BROKEN_DUP_RULES := true
+
 # Sepolicy
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 
